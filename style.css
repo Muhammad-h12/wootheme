@@ -1,0 +1,15 @@
+/*
+    Theme Name: Woo Theme
+    Author: Muhammad Haroon
+    Author URI: https://m-haroon.com
+    Description: A simple Worpdress Theme Compatible With Woocommmerce plugin.
+    Version: 1.0
+    Tags: ecommerce, custom-logo, featured images, footer-widgets, blog
+*/
+
+h1{
+    padding:0;
+    margin:0;
+    background-color: green;
+}
+

@@ -10,10 +10,8 @@
     </div>
         <!-- Content area Ends Here -->
 
-    <footer>
-    <p> &#169; wootheme - 2022</p>
-    </footer>
-
+    <!--Footer Template -->
+    <?php get_template_part( 'template-parts/footer/site-footer' ) ?>
 
     </div>
     <!-- Page Content Ends Here -->

@@ -25,3 +25,26 @@
  }
 
 add_action( 'wp_enqueue_scripts', 'woo_theme_scripts' );
+
+
+function woo_theme_setup() {
+
+   // resgister custom Naviagtion walker
+
+   require_once get_template_directory() . '/assets/class-wp-bootstrap-navwalker.php';
+   
+   register_nav_menus(
+      array(
+         'woo_theme_main_menu' => 'Woo Theme Main Menu',
+         'woo_theme_footer_menu' => 'Woo Theme Footer Menu'
+      )
+   );
+
+   add_theme_support( 'woocommerce' );
+
+   add_theme_support( 'wc-product-gallery-zoom' );
+   add_theme_support( 'wc-product-gallery-lightbox' );
+   add_theme_support( 'wc-product-gallery-slider' );
+}
+
+add_action( 'after_setup_theme', 'woo_theme_setup' );

@@ -1,7 +1,7 @@
 <?php 
 
 /**
- * This Template powers up the blog archive page - all posts
+ * The Template powers up all the static Pages
  * 
  * @package wootheme
  */
@@ -18,13 +18,12 @@ get_header(); ?>
             <div class="container mt-4">
                 <div class="row">
                     <div class="col-sm-12">
-                        
+                
                         <h2><?php echo the_title(); ?></h2>
                         <p><?php echo the_content(); ?></p>
-            
                     </div>
                 </div>
-            </div>            
+            </div>    
             <?php                
             endWhile;
         else:

@@ -20,7 +20,9 @@
     
     <div id="page" class="site">
 
-    <!-- add Site Header Template Here -->
+    <!-- Site Header -->
+    <?php get_template_part( 'template-parts/header/site-header' );?>
+
     
     <div id="content" class="content-area">
 
